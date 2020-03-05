@@ -22,6 +22,8 @@
 	<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
 	<script>
 		const channelId = 1653921037;
+		const liffUrl = 'line://app/1653921037-gL5vYr8p';
+
 		/**
 		 * Initialize LIFF
 		 * @param {string} myLiffId The LIFF ID of the selected element
@@ -49,7 +51,7 @@
 			document.getElementById('deviceOS').textContent = liff.getOS();
 		}
 
-		initializeLiff(channelId);
+		initializeLiff(liffUrl);
 		displayLiffData();
 	</script>
 </body>
