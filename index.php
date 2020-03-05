@@ -28,7 +28,7 @@
 				// start to use LIFF's api
 				initializeApp();
 			}).catch(error => {
-				document.getElementById('lifeAppContent').classList.add('hidden');
+				document.getElementById('liffAppContent').classList.add('hidden');
 				document.getElementById('liffInitErrorMessage').classList.remove('hidden');
 			});
 		}
