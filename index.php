@@ -6,23 +6,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="theme-color" content="#000000" />
 	<meta name="robots" content="noindex, nofollow" />
-	<meta name="description" content="Sount Input Test" />
+	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<title>LIFF Starter</title>
+	<title>Liff Starter</title>
 </head>
 <body>
 	<p id="liffAppContent"></p>
 	<p id="liffInitErrorMessage"></p>
 	<p id="browserLanguage"></p>
 	<p id="sdkVersion"></p>
-	<p id="isInClient"></p>
 	<p id="isLoggedIn"></p>
 	<p id="deviceOS"></p>
+	<button type="button" id="liffLoginButton">Login</button>
 
 	<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
 	<script>
-		const channelId = 1653921037;
-		const liffUrl = 'line://app/1653921037-gL5vYr8p';
+		const myLiffId = '1653921037-gL5vYr8p';
 
 		/**
 		 * Initialize LIFF
@@ -51,8 +50,9 @@
 			document.getElementById('deviceOS').textContent = liff.getOS();
 		}
 
-		initializeLiff(liffUrl);
+		initializeLiff(myLiffId);
 		displayLiffData();
+
 	</script>
 </body>
 </html>
